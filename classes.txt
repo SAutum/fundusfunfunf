@@ -1,0 +1,8 @@
+N-> normal
+D-> diabetes
+G-> glaucoma
+C-> cataract
+A-> AMD
+H-> hypertension
+M-> myopia
+O-> other diseases
