@@ -1,0 +1,2 @@
+Note: this folder contains the code extracted from the trials in the ipynb files,
+so that they could be used in the further developments.
