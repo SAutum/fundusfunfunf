@@ -12,11 +12,15 @@ def load_annotation():
     df = pd.read_csv(os.path.join(script_dir, "../annotations.csv"), index_col=0)
     return df
 
-def load_left_eye_image(df, class_, i):
+def load_left_eye_image(df, i, class_=None ):
+    if class_==None:
+        return Image.open(os.path.join(script_dir, "../images/{}").format(df.Left_Fundus.values[i]))
     image = Image.open(os.path.join(script_dir, "../images/{}").format(df[df[class_] == 1].Left_Fundus.values[i]))
     return image
 
-def load_right_eye_image(df, class_, i):
+def load_right_eye_image(df,i, class_=None):
+    if class_==None:
+        return Image.open(os.path.join(script_dir, "../images/{}").format(df.Right_Fundus.values[i]))
     image = Image.open(os.path.join(script_dir, "../images/{}").format(df[df[class_] == 1].Right_Fundus.values[i]))
     return image
 
