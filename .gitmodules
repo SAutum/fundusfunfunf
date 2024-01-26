@@ -1,0 +1,3 @@
+[submodule "submodules/FR-Unet"]
+	path = submodules/FR-Unet
+	url = https://github.com/lseventeen/FR-UNet.git
